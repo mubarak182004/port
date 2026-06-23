@@ -79,7 +79,13 @@ const Experience = () => {
                 "Built a strong understanding of software engineering principles, system design, and technology-driven solutions.",
                 "Developed a passion for web development, software testing, and continuous learning in modern technologies.",
                 "Enhanced technical expertise through continuous learning, practical assignments, and project-based development.",
-                "Prepared for a career in software development and quality assurance by building strong technical and analytical skills."
+                "Prepared for a career in software development and quality assurance by building strong technical and analytical skills.",
+                "Built strong fundamentals in object-oriented programming concepts.",
+                "Learned software development lifecycle and project management basics.",
+                "Applied database design concepts through academic assignments.",
+                "Worked on practical web development projects using modern technologies.",
+                "Strengthened debugging and code optimization skills through hands-on learning.",
+
               ].map((item, index) => (
                 <li key={index} className="flex items-start group/item">
                   <span className="mt-[0.6rem] mr-4 w-1.5 h-1.5 rounded-full bg-white/20 group-hover/item:bg-studio-accent/80 transition-colors duration-300 shrink-0" />
@@ -116,7 +122,7 @@ const Experience = () => {
               </p>
             </div>
 
-            <ul className="relative z-10 space-y-4 mb-6">
+            <ul className="relative z-10 space-y-4">
               {[
                 "Performed Manual Testing and Automation Testing for web applications.",
                 "Created, executed, and maintained test cases and test scenarios.",
@@ -126,11 +132,14 @@ const Experience = () => {
                 "Collaborated with developers to validate bug fixes and ensure application reliability.",
                 "Worked with HTML, CSS, and responsive web design principles.",
                 "Followed industry-standard QA processes, testing workflows, and documentation practices.",
-                "Gained hands-on experience in Manual Testing, Playwright Automation Testing, and web application quality assurance through real-world projects.",
+                "Gained hands‑on experience in Manual Testing, Playwright Automation Testing, and web application quality assurance through real‑world projects.",
                 "Worked with test cases, bug reporting, automation scripts, and frontend technologies to deliver reliable software solutions.",
-                "Improved debugging, analytical thinking, and problem-solving skills while working on software testing activities.",
-                "Strengthened understanding of software quality assurance, test automation frameworks, and industry best practices."
-              ].map((item, index) => (
+                "Improved debugging, analytical thinking, and problem‑solving skills while working on software testing activities.",
+                "Strengthened understanding of software quality assurance, test automation frameworks, and industry best practices.",
+                "Implemented continuous integration pipelines for automated test execution.",
+                "Communicated test results and status updates to stakeholders and project managers.",
+                "Contributed to test documentation and reporting workflows.",
+               ].map((item, index) => (
                 <li key={index} className="flex items-start group/item">
                   <span className="mt-[0.6rem] mr-4 w-1.5 h-1.5 rounded-full bg-white/20 group-hover/item:bg-studio-accent/80 transition-colors duration-300 shrink-0" />
                   <span className="font-sans text-[15px] md:text-base text-studio-muted/80 font-light leading-relaxed group-hover/item:text-studio-muted transition-colors duration-300">

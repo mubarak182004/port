@@ -92,7 +92,7 @@ const Hero = () => {
         >
           <motion.div
             animate={float.animate}
-            className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px]"
+            className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px]" style={{ transform: 'scaleX(0.135) scaleY(0.9)', marginLeft: 'auto' }}
           >
             {/* Outer glow */}
             <div className="absolute inset-[-20%] rounded-full bg-gradient-to-br from-white/8 via-white/4 to-transparent blur-3xl" />
@@ -100,7 +100,7 @@ const Hero = () => {
             <div className="absolute inset-[-10%] rounded-full bg-gradient-to-tr from-studio-accent/5 via-transparent to-white/5 blur-2xl" />
 
             {/* Glassmorphism frame */}
-            <div className="relative w-full h-full rounded-full bg-white/[0.04] backdrop-blur-2xl border border-white/15 shadow-2xl shadow-black/30 overflow-hidden ring-1 ring-white/5">
+                        <div className="relative w-full h-full rounded-full bg-white/[0.04] backdrop-blur-2xl border border-white/15 shadow-2xl shadow-black/30 overflow-hidden ring-1 ring-white/5">
               <img
                 src={profileImg}
                 alt="Mubarak – Frontend Developer & QA Automation Tester"

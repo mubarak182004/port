@@ -1,0 +1,38 @@
+/* Contact.css - Dark theme form input styling and autofill overrides */
+
+/* Base input and textarea styling */
+input,
+textarea {
+  background-color: #111111;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Focus state */
+input:focus,
+textarea:focus {
+  background-color: #111111; /* keep dark */
+  color: #ffffff;
+  border-color: #7163F1;
+  box-shadow: 0 0 20px rgba(113, 99, 241, 0.3);
+  outline: none;
+}
+
+/* Placeholder color */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Autofill overrides */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #111111 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
