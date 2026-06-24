@@ -96,7 +96,7 @@ const Hero = () => {
           >
             {/* Outer glow */}
             <div className="absolute inset-[-10%] rounded-2xl bg-gradient-to-br from-white/10 via-white/5 to-transparent blur-3xl" />
-            
+
             {/* Secondary ambient glow */}
             <div className="absolute inset-[-5%] rounded-2xl bg-gradient-to-tr from-studio-accent/10 via-transparent to-white/5 blur-2xl" />
 
