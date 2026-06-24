@@ -85,34 +85,31 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        {/* Right side – profile image as main visual focus */}
         <motion.div
           variants={fadeIn}
-          className="relative flex-shrink-0"
+          className="relative flex-shrink-0 flex justify-center items-center"
         >
           <motion.div
             animate={float.animate}
-            className="relative w-64 h-80 sm:w-72 sm:h-96 md:w-[360px] md:h-[480px] lg:w-[420px] lg:h-[560px]"
+            whileHover={{ scale: 1.03 }}
+            className="relative w-[550px] h-[550px] md:w-[420px] md:h-[420px] sm:w-[280px] sm:h-[280px] overflow-hidden rounded-full"
           >
-            {/* Outer glow */}
-            <div className="absolute inset-[-10%] rounded-2xl bg-gradient-to-br from-white/10 via-white/5 to-transparent blur-3xl" />
-
+            {/* Outer soft white glow */}
+            <div className="absolute inset-[-15%] rounded-full bg-gradient-to-br from-white/15 via-white/8 to-transparent blur-3xl animate-pulse" />
             {/* Secondary ambient glow */}
-            <div className="absolute inset-[-5%] rounded-2xl bg-gradient-to-tr from-studio-accent/10 via-transparent to-white/5 blur-2xl" />
-
-            {/* Glassmorphism frame with a professional aspect ratio */}
-            <div className="relative w-full h-full rounded-2xl bg-[#111111]/60 backdrop-blur-md border border-white/10 shadow-2xl overflow-hidden group">
+            <div className="absolute inset-[-8%] rounded-full bg-gradient-to-tr from-studio-accent/10 via-transparent to-white/5 blur-2xl" />
+            {/* Glassmorphism circular frame */}
+            <div className="relative w-full h-full rounded-full bg-[#111111]/70 backdrop-blur-md border border-white/20 shadow-2xl overflow-hidden">
               <img
                 src={profileImg}
                 alt="Mubarak – Frontend Developer & QA Automation Tester"
-                className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+                className="w-full h-full object-cover object-top transition-transform duration-700 ease-out"
               />
-              {/* Subtle inner overlay for blending */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
+              {/* Thin illuminated border */}
+              <div className="absolute inset-0 rounded-full border-2 border-white/30 pointer-events-none" />
+              {/* Subtle inner radial glow */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-b from-transparent via-white/10 to-black/20 pointer-events-none" />
             </div>
-
-            {/* Decorative minimalist border */}
-            <div className="absolute inset-[-4%] rounded-2xl border border-white/10 pointer-events-none opacity-50" />
           </motion.div>
         </motion.div>
       </motion.div>
