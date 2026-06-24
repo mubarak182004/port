@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profileImg from '../assets/hero.png';
+import profileImg from '../assets/profile.jpg';
 
 // Animation variants
 const container = {
@@ -92,24 +92,27 @@ const Hero = () => {
         >
           <motion.div
             animate={float.animate}
-            className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px]"
+            className="relative w-64 h-80 sm:w-72 sm:h-96 md:w-[360px] md:h-[480px] lg:w-[420px] lg:h-[560px]"
           >
             {/* Outer glow */}
-            <div className="absolute inset-[-20%] rounded-full bg-gradient-to-br from-white/8 via-white/4 to-transparent blur-3xl" />
+            <div className="absolute inset-[-10%] rounded-2xl bg-gradient-to-br from-white/10 via-white/5 to-transparent blur-3xl" />
+            
             {/* Secondary ambient glow */}
-            <div className="absolute inset-[-10%] rounded-full bg-gradient-to-tr from-studio-accent/5 via-transparent to-white/5 blur-2xl" />
+            <div className="absolute inset-[-5%] rounded-2xl bg-gradient-to-tr from-studio-accent/10 via-transparent to-white/5 blur-2xl" />
 
-            {/* Glassmorphism frame */}
-            <div className="relative w-full h-full rounded-full bg-white/[0.04] backdrop-blur-2xl border border-white/15 shadow-2xl shadow-black/30 overflow-hidden ring-1 ring-white/5">
+            {/* Glassmorphism frame with a professional aspect ratio */}
+            <div className="relative w-full h-full rounded-2xl bg-[#111111]/60 backdrop-blur-md border border-white/10 shadow-2xl overflow-hidden group">
               <img
                 src={profileImg}
                 alt="Mubarak – Frontend Developer & QA Automation Tester"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
               />
+              {/* Subtle inner overlay for blending */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
             </div>
 
-            {/* Decorative orbit ring */}
-            <div className="absolute inset-[-8%] rounded-full border border-white/[0.06] pointer-events-none" />
+            {/* Decorative minimalist border */}
+            <div className="absolute inset-[-4%] rounded-2xl border border-white/10 pointer-events-none opacity-50" />
           </motion.div>
         </motion.div>
       </motion.div>
